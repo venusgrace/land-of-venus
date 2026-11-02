@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/ZR2SpzKq/pillico.png">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class = "navbar">
+        <div class = "navbar_container">
+            <div class = "navbar_logo">
+                <img src = "profile/my-corner.png" alt="my corner">
+            </div>
+            <div class = "navbar_links">
+                <a href="index.html">home</a>
+                <a href="views\about-me.html">about</a>
+                <a href="views\projects.html">projects</a>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" autoplay loop preload="auto">
+        <source src="source/さむくてあったかいふゆ雪の世界.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <br>
+    <marquee class="stampbar" behavior="scroll" scrollamount="15" direction="left">
+        <img src="stamps/pink-cat.jpg" alt="pink cat stamp">
+        <img src = "stamps/eyes.webp" alt="eyes stamp">
+        <img src = "stamps/miku.png" alt="miku  stamp">
+        <img src = "stamps/anime.gif" alt="anime stamp">
+        <img src = "stamps/peter.png" alt="peter stamp">
+        <img src = "stamps/penis.jpg" alt="penis stamp">
+        <img src = "stamps/xray-hand.webp" alt="xray hand stamp">
+        <img src = "stamps/ykwgohdy.webp" alt="ykwgohdy stamp">
+        <img src = "stamps/anti-internet.webp" alt="anti-internet stamp">
+        <img src = "stamps/hatin.jpg" alt="hatin stamp">
+        <img src = "stamps/frog.png" alt="frog stamp">
+        <img src = "stamps/lucky-star.webp" alt="lucky star stamp">
+        <img src = "stamps/sbd.webp" alt="sbd stamp">
+        
+    </marquee>
+    <marquee class="scrollbar" behavior="scroll" scrollamount="15" direction="left">
+        <img src="blinkies/chiikawa.gif" alt="chiikawa gif">
+        <img src="blinkies/imtryingmybest.gif" alt="imtryingmybest gif">
+        <img src="blinkies/pleasebepatient.gif" alt="pleasebepatient gif">
+        <img src="blinkies/going-insane.webp" alt="going-insane gif">
+        <img src="blinkies/mcns.webp" alt="mcns gif">
+
+    </marquee>
+
+    <br>
+
+    <div class = "baseplate">
+        <div class = "left_section">
+            <div class = "left_profile_container">
+                <div class="profile_image">
+                    <img src="images/izumi.jpg" id="profile-border" alt="profile image">
+                </div>
+                <div class = "profile_info">
+                    <img src="profile/kudos.webp">
+                    <p>
+                        <b>name:</b> venus :3<br>
+                        <b>age:</b> 202<br>
+                        <b>pronouns:</b> she/they<br>
+                        <b>likes:</b> frogs and cats !!<br>
+                    </p>
+                </div>
+            </div>
+            <div class = "profile_info">
+                <img src = "profile/cat-owner.png" alt="cat owner image" height="20px" width="125px">
+                <img src = "profile/cutie-patootie.webp" alt="cutie patootie image" height="20px" width="125px">
+                <img src = "profile/taurus.png" alt="taurus image" height="20px" width="125px">
+            </div>
+            <img src = "images/stars.png" alt="stars image">
+            <div class = "left_01_container">
+               <h3><center>listening</center></h3>
+                <div class="music marquee">
+                  <span>
+                  <center><img src="https://i.postimg.cc/52gWpCNT/a-audio.gif"> just - radiohead </center>
+                  </span>
+               </div>
+            </div>
+        </div>
+    
+    <div class = "main_section">
+        <div class = "main_01_container">
+            <p>hello, my name is kayla but feel free to call me venus! ive been coding for a while now, and having a blast :3. </p>
+            <p>maybe i should also mention that i also study web design and development, as well as networking and data management! currently in my final year of college and suffering (haha refer me to employers..)</p>
+            <p>im a pretty boring person, but i just like to think i enjoy the little things!! im hoping to document my life in a digital diary, to relieve the stress of my new adult life (oh no!)</p>
+        </div>
+        <div class = "main_02_container">
+            <h2>currently</h2>
+            <ul>
+                <li>feeling -> so so tired pls help</li>
+                <li>watching -> </li>
+                <ul>
+                    <li>the hunger games</li>
+                    <li>grey's anatomy s2-s3 </li>
+                    </ul>
+                <li>playing -> </li>
+                    <ul>
+                        <li>minecraft</li>
+                        <li>roblox</li>
+                        <li>...overwatch</li>
+                    </ul>
+                <li>reading -> harry potter and the prisoner of azkaban</li>
+               </ul>
+        </div>
+            
+
+    </div>
+
+    
+    <div class = "right_section">
+        <img src = "images/crayon.png" alt="crayon image" height="55px" width="300px">
+        <div class = "right_01_container">
+            <h3>goals</h3>
+                  <ul>
+                     <li>endulge in all great things</li>
+                     <li>get a pet frog</li>
+                     <li>become a cat lady</li>
+                  </ul>
+               </div>
+        <div class = "right_02_container">
+        </div>
+</body>
+<script>
+    const audio = document.getElementById('bg-music');
+        audio.volume = 0.15; // 30% volume
+    document.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play().catch(error => console.log("Autoplay prevented, waiting for interaction."));
+        }
+    }, { once: true });
+</script>
+</html>
